@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f3c2ad3e80b6db149aaa84248cc1f649, type: 3}
-  m_Name: "SO\u968F\u673A\u6C60_\u704C\u6728\uFF08\u4E0D\u5E26\u6D46\u679C\uFF09"
+  m_Name: "RP_\u704C\u6728\uFF08\u4E0D\u5E26\u6D46\u679C\uFF09"
   m_EditorClassIdentifier: 
   randomPool:
   - {fileID: 21300000, guid: 3123dde2f4c32cb45a13340f32ff6df6, type: 3}

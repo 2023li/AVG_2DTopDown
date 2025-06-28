@@ -4,6 +4,29 @@
     ],
     "file.lastUsedOpenFilter": "全部文件 (*)",
     "fileStates": {
+        "D:/UnityProject/LuminaOdyssey/Assets/Game/TiledMap/Sample Map.tmx": {
+            "scale": 0.9891875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 560.0556011878435,
+                "y": 1006.8869653124407
+            }
+        },
+        "D:/UnityProject/LuminaOdyssey/Assets/Game/TiledMap/Tilesets/Atlas-Props-sprites.tsx": {
+            "scaleInDock": 1
+        },
+        "D:/UnityProject/LuminaOdyssey/Assets/Game/TiledMap/Tilesets/Atlas-Props.tsx": {
+            "scaleInDock": 1
+        },
+        "D:/UnityProject/LuminaOdyssey/Assets/Game/TiledMap/Tilesets/Tileset - wall 1.tsx": {
+            "scaleInDock": 1
+        },
+        "D:/UnityProject/LuminaOdyssey/Assets/Game/TiledMap/Tilesets/Tileset - wall 2.tsx": {
+            "scaleInDock": 1
+        },
+        "D:/UnityProject/LuminaOdyssey/Assets/Game/TiledMap/Tilesets/Tileset-Terrain.tsx": {
+            "scaleInDock": 1
+        },
         "D:/UnityProject/LuminaOdyssey/Assets/RafaelMatos/ERW-Ancient Ruins V1.9.1/TiledMap Editor/Sample scene.tmx": {
             "scale": 2,
             "selectedLayer": 0,
@@ -105,6 +128,7 @@
             "scaleInDock": 0.25
         },
         "D:/UnityProject/LuminaOdyssey/Assets/RafaelMatos/ERW-Grass Land V1.5.1/TiledMap Editor/tilesets/Atlas-Props.tsx": {
+            "dynamicWrapping": false,
             "scaleInDock": 3
         },
         "D:/UnityProject/LuminaOdyssey/Assets/RafaelMatos/ERW-Grass Land V1.5.1/TiledMap Editor/tilesets/Grass Land - tileset-cliff.tsx": {
@@ -197,14 +221,11 @@
             "scaleInDock": 1
         },
         "D:/UnityProject/LuminaOdyssey/Assets/RafaelMatos/ERW-Grassland 2.0 V1.7.2/TiledMap Editor/main.tmx": {
-            "expandedObjectLayers": [
-                19
-            ],
-            "scale": 1.5,
-            "selectedLayer": 9,
+            "scale": 1,
+            "selectedLayer": 6,
             "viewCenter": {
-                "x": 1101.3333333333333,
-                "y": -510.99999999999994
+                "x": -750,
+                "y": 1241.5
             }
         },
         "房子tmx/官方预制房1-3.tsx": {
@@ -224,6 +245,7 @@
     "project": "LOTiledProject.tiled-project",
     "recentFiles": [
         "D:/UnityProject/LuminaOdyssey/Assets/RafaelMatos/ERW-Grassland 2.0 V1.7.2/TiledMap Editor/main.tmx",
+        "D:/UnityProject/LuminaOdyssey/Assets/Game/TiledMap/Sample Map.tmx",
         "D:/UnityProject/LuminaOdyssey/Assets/RafaelMatos/ERW-Grassland 2.0 V1.7.2/TiledMap Editor/TiledMap Editor Example - grass land 2.0.tmx",
         "D:/UnityProject/LuminaOdyssey/Assets/RafaelMatos/ERW-Grassland 2.0 V1.7.2/TiledMap Editor/Tilesets/Atlas-Props-sheet1.tsx",
         "D:/UnityProject/LuminaOdyssey/Assets/RafaelMatos/ERW-Grass Land V1.5.1/TiledMap Editor/Sample Map.tmx",
