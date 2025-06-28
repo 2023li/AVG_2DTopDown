@@ -54,8 +54,8 @@ public abstract class ScenesHelpBase<T> :ffSingletonMonoBehaviour<T>, MMEventLis
                 break;
             case TopDownEngineEventTypes.LevelStart:
                 string sceneName = SceneManager.GetActiveScene().name;
+                //记录最后的场景位置
                 PersistenceManager.Instance.SetLastScene(sceneName);
-
                 PersistenceManager persistenceManager = PersistenceManager.Instance;
                 if (persistenceManager != null)
                 {

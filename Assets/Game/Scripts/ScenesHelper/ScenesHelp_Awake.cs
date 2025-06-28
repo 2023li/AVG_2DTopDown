@@ -38,10 +38,12 @@ public class ScenesHelp_Awake : ScenesHelpBase<ScenesHelp_Awake>
                 break;
             case LOGameEventType.SetLanguage:
                 break;
+
             case LOGameEventType.LoadSaveComplete:
+                //监听到存档数据加载完成
                 point.LevelName = PersistenceManager.Instance.LastScene;
                 point.UseEntryPoints = true;
-                point.PointOfEntryIndex = PersistenceManager.Instance.LastPoint;
+                point.PointOfEntryIndex = PersistenceManager.Instance.LastPointIndex;
                 point.GoToNextLevel();
                 break;
             default:

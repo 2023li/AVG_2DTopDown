@@ -330,7 +330,7 @@ namespace MoreMountains.TopDownEngine
 				return;
 			}
 
-			Debug.Log(MainInventory == null);
+			
 
 			for (int i = 0; i < MainInventory.Content.Length ; i++)
 			{

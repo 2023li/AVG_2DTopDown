@@ -74,7 +74,7 @@ public struct LOGameEvent
 /// </summary>
 public class PersistenceManager : MMPersistentSingleton<PersistenceManager>, MMEventListener<LOGameEvent>
 {
-    private static class Appkey
+    private static class AppDataKey
     {
        
         //第一次启动
@@ -95,7 +95,7 @@ public class PersistenceManager : MMPersistentSingleton<PersistenceManager>, MME
     public void SetFirstLaunch()
     {
         _firstLaunch = false;
-        ES3.Save(Appkey.FirstLaunch, _appLanguage);
+        ES3.Save(AppDataKey.FirstLaunch, _appLanguage);
     }
 
 
@@ -104,7 +104,7 @@ public class PersistenceManager : MMPersistentSingleton<PersistenceManager>, MME
     public void SetLanguage(LOGameLanguage newLanguage)
     {
         _appLanguage = newLanguage;
-        ES3.Save(Appkey.Language, _appLanguage);
+        ES3.Save(AppDataKey.Language, _appLanguage);
     }
     public float Volume_BGM { get { return _volume_BGM; } } 
     public float Volume_SFX { get { return _volume_SFX; } }
@@ -140,10 +140,10 @@ public class PersistenceManager : MMPersistentSingleton<PersistenceManager>, MME
     private  void LoadAppData()
     {
         string fullPath = Path.Combine(Application.persistentDataPath, "AppData.loappsave");
-        _firstLaunch = ES3.Load<bool>(Appkey.FirstLaunch, fullPath);
-        _appLanguage = ES3.Load<LOGameLanguage>(Appkey.Language, fullPath);
-        _volume_SFX = ES3.Load<float>(Appkey.Volume_SFX, fullPath);
-        _volume_BGM = ES3.Load<float>(Appkey.Volume_BGM, fullPath);
+        _firstLaunch = ES3.Load<bool>(AppDataKey.FirstLaunch, fullPath);
+        _appLanguage = ES3.Load<LOGameLanguage>(AppDataKey.Language, fullPath);
+        _volume_SFX = ES3.Load<float>(AppDataKey.Volume_SFX, fullPath);
+        _volume_BGM = ES3.Load<float>(AppDataKey.Volume_BGM, fullPath);
     }
 
 
@@ -151,10 +151,10 @@ public class PersistenceManager : MMPersistentSingleton<PersistenceManager>, MME
     {
         string path = Path.Combine(Application.persistentDataPath, "AppData.loappsave");
 
-        ES3.Save(Appkey.FirstLaunch, FirstLaunch, path);
-        ES3.Save<LOGameLanguage>(Appkey.Language, AppLanguage, path);
-        ES3.Save(Appkey.Volume_SFX, 1f, path);
-        ES3.Save(Appkey.Volume_BGM, 1f, path);
+        ES3.Save(AppDataKey.FirstLaunch, FirstLaunch, path);
+        ES3.Save<LOGameLanguage>(AppDataKey.Language, AppLanguage, path);
+        ES3.Save(AppDataKey.Volume_SFX, 1f, path);
+        ES3.Save(AppDataKey.Volume_BGM, 1f, path);
     }
 
 
@@ -173,7 +173,7 @@ public class PersistenceManager : MMPersistentSingleton<PersistenceManager>, MME
 
     //----------------------------存档数据------------------------------------
   
-    private static class GDkey
+    private static class GameDatakey
     {
         public const string PlayerName = "PlayerName";
         public const string SaveID = "SaveID";
@@ -187,7 +187,7 @@ public class PersistenceManager : MMPersistentSingleton<PersistenceManager>, MME
     public string SaveOnlyID { get { return _saveOnlyID; } }
     public string SaveFolderPath { get { return _saveFolderPath; } }
     public string LastScene { get { return _lastScene; } }
-    public int LastPoint { get { return _lastPoint; } }
+    public int LastPointIndex { get { return _lastPoint; } }
 
 
     public string SetPlayerName(string name){ return _playerName = name;}
@@ -214,12 +214,11 @@ public class PersistenceManager : MMPersistentSingleton<PersistenceManager>, MME
 
 
         //还要存玩家数据
-        Debug.LogWarning("玩家数据部分未完成");
         SaveGameToFile();
 
     }
 
-
+    //版本更新之后读取前需要修复存档
     private void TryFixGameData()
     {
 
@@ -235,11 +234,11 @@ public class PersistenceManager : MMPersistentSingleton<PersistenceManager>, MME
         }
         string fullPath = Path.Combine(SaveFolderPath, "GameData.logamesave");
 
-        ES3.Save(GDkey.PlayerName, PlayerName, fullPath);
-        ES3.Save(GDkey.SaveID, SaveOnlyID, fullPath);
-        ES3.Save(GDkey.LastSceneName, LastScene, fullPath);
-        ES3.Save(GDkey.LastCheckoutPoint, LastPoint, fullPath);
-        ES3.Save(GDkey.CharDress, _dic_CharDress, fullPath);
+        ES3.Save(GameDatakey.PlayerName, PlayerName, fullPath);
+        ES3.Save(GameDatakey.SaveID, SaveOnlyID, fullPath);
+        ES3.Save(GameDatakey.LastSceneName, LastScene, fullPath);
+        ES3.Save(GameDatakey.LastCheckoutPoint, LastPointIndex, fullPath);
+        ES3.Save(GameDatakey.CharDress, _dic_CharDress, fullPath);
 
 
         DateTime currentTime = DateTime.Now;
@@ -252,12 +251,15 @@ public class PersistenceManager : MMPersistentSingleton<PersistenceManager>, MME
     {
 
         _saveFolderPath = Path.GetDirectoryName(fullPath);
-        _saveOnlyID = ES3.Load<string>(GDkey.SaveID, fullPath);
-        _playerName = ES3.Load<string>(GDkey.PlayerName, fullPath);
-        _lastScene = ES3.Load<string>(GDkey.LastSceneName, fullPath);
-        _lastPoint = ES3.Load<int>(GDkey.LastCheckoutPoint, fullPath);
-        _dic_CharDress = ES3.Load<Dictionary<CharacterBuilderPartEnum, string>>(GDkey.CharDress, fullPath);
+        _saveOnlyID = ES3.Load<string>(GameDatakey.SaveID, fullPath);
+        _playerName = ES3.Load<string>(GameDatakey.PlayerName, fullPath);
+        _lastScene = ES3.Load<string>(GameDatakey.LastSceneName, fullPath);
+        _lastPoint = ES3.Load<int>(GameDatakey.LastCheckoutPoint, fullPath);
+        _dic_CharDress = ES3.Load<Dictionary<CharacterBuilderPartEnum, string>>(GameDatakey.CharDress, fullPath);
 
+
+
+        Debug.Log(_lastScene);
         Debug.Log("数据加载完成");
         //SceneHelp会监听这个事件 并且去跳转场景
         LOGameEvent e = new LOGameEvent(LOGameEventType.LoadSaveComplete);
