@@ -1,0 +1,21 @@
+Rules\wall-1-rule0-reset.tmx
+Rules\wall-1-rule1-places all tiles.tmx
+Rules\wall-1-rule2-applies variations.tmx
+
+Rules\wall-1-transparency-rule0-reset.tmx
+Rules\wall-1-transparency-rule1-places all tiles.tmx
+Rules\wall-1-transparency-rule2-applies variations.tmx
+
+Rules\hole-1-rule0-reset.tmx
+Rules\hole-1-rule1-places all tiles.tmx
+Rules\hole-1-rule2-applies variations.tmx
+
+Rules\hole-2-rule0-reset.tmx
+Rules\hole-2-rule1-places all tiles.tmx
+Rules\hole-2-rule2-applies variations.tmx
+
+Rules\hole-3-transparency-rule0-reset.tmx
+Rules\hole-3-transparency-rule1-places all tiles.tmx
+Rules\hole-3-transparency-rule2-applies variations.tmx
+
+D:\UnityProject\LuminaOdyssey\Assets\RafaelMatos\ERW-Sea Adventures-GL2 Expansion-V1.4.1\TiledMap Editor\rules.txt

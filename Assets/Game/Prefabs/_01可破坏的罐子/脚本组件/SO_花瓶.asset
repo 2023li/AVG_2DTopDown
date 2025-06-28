@@ -1,0 +1,146 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eefdf8dc7b4279c4a8c62a4fd25446ca, type: 3}
+  m_Name: "SO_\u82B1\u74F6"
+  m_EditorClassIdentifier: 
+  "Vases_\u68D5\u8272":
+  - {fileID: 21300000, guid: b08886f2f9fa4b54aa7bcfe6118c46c1, type: 3}
+  - {fileID: 21300000, guid: 68fb43f746d9cda44aaec9281816272f, type: 3}
+  - {fileID: 21300000, guid: 124da93b388dd0d4583f4c341526f53d, type: 3}
+  - {fileID: 21300000, guid: 1384a284ea4259a49bd726de3986c27d, type: 3}
+  - {fileID: 21300000, guid: 728ce77146526e441a8b6c36a51bff76, type: 3}
+  - {fileID: 21300000, guid: ff8aa7f36789cfd49b8cda1f0ffec290, type: 3}
+  - {fileID: 21300000, guid: c2235f677f3ae934d97b613c3ab581f1, type: 3}
+  - {fileID: 21300000, guid: 553478407dbf8584e93de785309b996c, type: 3}
+  - {fileID: 21300000, guid: 268d737335eb18d428da220d2493f051, type: 3}
+  - {fileID: 21300000, guid: 84cdd93295e55f644923aa8f634bdbcf, type: 3}
+  - {fileID: 21300000, guid: 90165b8f07e11614d95d34f542f47d64, type: 3}
+  "Vases_\u6DF1\u7EFF\u8272":
+  - {fileID: 21300000, guid: 825d2616f047c5f4d810124d3f6beb50, type: 3}
+  - {fileID: 21300000, guid: 553b0553a683cb34faa39800df37c369, type: 3}
+  - {fileID: 21300000, guid: c98ae7d540d8351448bb30ade47a4e69, type: 3}
+  - {fileID: 21300000, guid: 04aae5daaad5769429e817a5af63b506, type: 3}
+  - {fileID: 21300000, guid: e2fcf6822cdbc6f45bfa3de7436a0027, type: 3}
+  - {fileID: 21300000, guid: 4e1a19188fb572048af7c8dcc3e78469, type: 3}
+  - {fileID: 21300000, guid: 8dc7e6946055f23489c94f94ca2e608a, type: 3}
+  - {fileID: 21300000, guid: 584b6b6ff81e4664393f10001dcbf5b7, type: 3}
+  - {fileID: 21300000, guid: c3395b5083f70c940a7601045b9de34c, type: 3}
+  - {fileID: 21300000, guid: 66c13e31796253645b3402fd79f1e822, type: 3}
+  - {fileID: 21300000, guid: 4cd05313bb212624c81800e76500b546, type: 3}
+  "Vases_\u7D2B\u8272":
+  - {fileID: 21300000, guid: 61d31e0f6f366704fb955e3cd2082b7c, type: 3}
+  - {fileID: 21300000, guid: d82a4189a9edce74aabe3da5763541c2, type: 3}
+  - {fileID: 21300000, guid: 0822869ed21332d4ab7c64ecebae9b45, type: 3}
+  - {fileID: 21300000, guid: 0c2376c177628d949b852f55692777d3, type: 3}
+  - {fileID: 21300000, guid: c424b2c3a941336469bed26c7bbda730, type: 3}
+  - {fileID: 21300000, guid: f75e0a11be179a74b82a532010ec82eb, type: 3}
+  - {fileID: 21300000, guid: 942fbd8bfb0dae54887acf50d05c02cc, type: 3}
+  - {fileID: 21300000, guid: bce35affbba1c5740b69b8ac03b61a0b, type: 3}
+  - {fileID: 21300000, guid: 6af791f214f33b74aa5b368ef2c87ac8, type: 3}
+  - {fileID: 21300000, guid: 2754650562bbd15438c62b29c1df200e, type: 3}
+  - {fileID: 21300000, guid: 052a4aed431d9274785c40059880509d, type: 3}
+  "Vases_\u7EA2\u68D5\u8272":
+  - {fileID: 21300000, guid: 9629d451ada215e42a715da1cf9bed81, type: 3}
+  - {fileID: 21300000, guid: edb373825e59cf14d9aecc6d3627c85a, type: 3}
+  - {fileID: 21300000, guid: 9489664c64c7d024d83519842a3690e1, type: 3}
+  - {fileID: 21300000, guid: e87aa415b7367ba41b7229d78c48ee5e, type: 3}
+  - {fileID: 21300000, guid: 1762e79a61665e74a8d83b5cd0c71ad1, type: 3}
+  - {fileID: 21300000, guid: 85dfffb8d69d4954b8d860aa07ce8e9b, type: 3}
+  - {fileID: 21300000, guid: dd2eccf0f1e00224f8541fa73925b4d2, type: 3}
+  - {fileID: 21300000, guid: ab87fae6fe2be9840821146d9fb80bcb, type: 3}
+  - {fileID: 21300000, guid: 6a3beb6fdf7856f48851db619c2be1f4, type: 3}
+  - {fileID: 21300000, guid: 4cd52b6f1ff324044b33764ec38e4314, type: 3}
+  - {fileID: 21300000, guid: 8a00d1c949d06b54cb762b1ec1afc034, type: 3}
+  "Vases_\u7EFF\u8272":
+  - {fileID: 21300000, guid: 4172e067527ec1c4ebb6ee7f1d18d465, type: 3}
+  - {fileID: 21300000, guid: d045cb7db9436da4f83a10b74c9ede72, type: 3}
+  - {fileID: 21300000, guid: 12f4c2b45aac1b9488576f0df4e002db, type: 3}
+  - {fileID: 21300000, guid: 7903250e968af784f8b9c88cca00e343, type: 3}
+  - {fileID: 21300000, guid: 7cf124fde14acac40bc904b27bd55d64, type: 3}
+  - {fileID: 21300000, guid: c22938c3410f0214cb8c860de4211078, type: 3}
+  - {fileID: 21300000, guid: ce56b134def5c79458ae5f5be764f7ad, type: 3}
+  - {fileID: 21300000, guid: 90eda9885307a0242aa5a12c6df2476f, type: 3}
+  - {fileID: 21300000, guid: 7896a92f90a4635458a15f68344838a8, type: 3}
+  - {fileID: 21300000, guid: db9bc4dfddaac014ab423bf379226a64, type: 3}
+  - {fileID: 21300000, guid: 8abc8ea1c12643d4e804fb7032e8e577, type: 3}
+  "Vases_\u84DD\u7EFF\u8272":
+  - {fileID: 21300000, guid: db2836b27b2b7964dac9cd4edabedb26, type: 3}
+  - {fileID: 21300000, guid: 232c81b85eec43048bc0ac9bbeaa2566, type: 3}
+  - {fileID: 21300000, guid: 3f9a7451767d32b4782f0358a4278417, type: 3}
+  - {fileID: 21300000, guid: 14fcaf2066e887c4aaf7276abec964d4, type: 3}
+  - {fileID: 21300000, guid: 9f07558b8fbfce64f8db004264dabbad, type: 3}
+  - {fileID: 21300000, guid: 950d4f594509c0d4586b6fb7fb1ab919, type: 3}
+  - {fileID: 21300000, guid: 191ca9412def1084db3363628e7e1499, type: 3}
+  - {fileID: 21300000, guid: ee12c2780fa183b4daba6a89c5853895, type: 3}
+  - {fileID: 21300000, guid: 51308cb21251dcf49b382690138a8317, type: 3}
+  - {fileID: 21300000, guid: e344726538eee2e499c505bca265eacc, type: 3}
+  - {fileID: 21300000, guid: 6df1e51e377919c43986bbc8acbb3a65, type: 3}
+  "Vases_\u68D5\u8272_\u7834\u788E":
+  - {fileID: 21300000, guid: fb426aaa1addbfc4ab614186175830a5, type: 3}
+  - {fileID: 21300000, guid: 9ab3160b3b2461b43a67f85979140278, type: 3}
+  - {fileID: 21300000, guid: b6643b3e9ea5410448e3fffb5866e9be, type: 3}
+  - {fileID: 21300000, guid: d6d9a23d20694524c8f042e61f8c48fd, type: 3}
+  - {fileID: 21300000, guid: deae11275fac96449961cb490408a4b2, type: 3}
+  "Vases_\u6DF1\u7EFF\u8272_\u7834\u788E":
+  - {fileID: 21300000, guid: 0c38bdac7f06c8b4fa997586f820aac8, type: 3}
+  - {fileID: 21300000, guid: 4a15c79b897c7304685489fb8f85fb96, type: 3}
+  - {fileID: 21300000, guid: d3b1152c1fc6da34184c05933a97d58c, type: 3}
+  - {fileID: 21300000, guid: 76519c1f2eeef47438a8aca30e66bf9c, type: 3}
+  - {fileID: 21300000, guid: 17d5c72d4ccb6c0469635fd5252031d9, type: 3}
+  "Vases_\u7D2B\u8272_\u7834\u788E":
+  - {fileID: 21300000, guid: f87c7b87c098f2440be755f96333005b, type: 3}
+  - {fileID: 21300000, guid: 5e4e37f9baf3f6e4c999798492a3887f, type: 3}
+  - {fileID: 21300000, guid: 6f18f5bae02c2d04b8bae2eb081fff38, type: 3}
+  - {fileID: 21300000, guid: c9d68508c39be59478b027564357cd5c, type: 3}
+  - {fileID: 21300000, guid: e0443942de9f7f44a8cb911dc4f54f28, type: 3}
+  "Vases_\u7EA2\u68D5\u8272_\u7834\u788E":
+  - {fileID: 21300000, guid: 2ed9201f48ec8f64382f77c912be734a, type: 3}
+  - {fileID: 21300000, guid: eaf6f3f783e329a409737a04f0ef85bf, type: 3}
+  - {fileID: 21300000, guid: 5b537727290763044bfe0718933cb89a, type: 3}
+  - {fileID: 21300000, guid: 351d3fa048227f54e8511c77b4cfb973, type: 3}
+  - {fileID: 21300000, guid: f2bbeefa27971674eb044346e16804fc, type: 3}
+  "Vases_\u7EFF\u8272_\u7834\u788E":
+  - {fileID: 21300000, guid: c86cd925fc6cb184da19b236e0235975, type: 3}
+  - {fileID: 21300000, guid: 004df0d95e3fa2e47bb37840b973f2a7, type: 3}
+  - {fileID: 21300000, guid: 3c1bf745c0d7ccd44badb7fdbe3ffa6a, type: 3}
+  - {fileID: 21300000, guid: a44cb7a2e1814214ea0a8c617fb39485, type: 3}
+  - {fileID: 21300000, guid: 21661478ab024ca4b9f536b0406b2531, type: 3}
+  "Vases_\u84DD\u7EFF\u8272_\u7834\u788E":
+  - {fileID: 21300000, guid: 6f9039574dcf1fb4f8b32f8ec874f32b, type: 3}
+  - {fileID: 21300000, guid: 9c5e1cbd2ffe33f46b62515f1ca92998, type: 3}
+  - {fileID: 21300000, guid: be3e910fd438cea4994b9afa12fa0b01, type: 3}
+  - {fileID: 21300000, guid: f35ca36c2c1b7c7469e5035910532211, type: 3}
+  - {fileID: 21300000, guid: 543e5e028f0a3d44f9322c83556af4a5, type: 3}
+  "ArtFolder_Vases_\u68D5\u8272": {fileID: 102900000, guid: c815e7d7a2d513c44850e0070795ba6f,
+    type: 3}
+  "ArtFolder_\u6DF1\u7EFF\u8272": {fileID: 102900000, guid: 58b221ddaa088cd469a39cad1d9f433c,
+    type: 3}
+  "ArtFolder_Vases_\u7D2B\u8272": {fileID: 102900000, guid: ce53a868af3f7b84eab1638446e7db0a,
+    type: 3}
+  "ArtFolder_Vases_\u7EA2\u68D5\u8272": {fileID: 102900000, guid: 5ecacd79aa7766f499c2845a82361d93,
+    type: 3}
+  "ArtFolder_Vases_\u7EFF\u8272": {fileID: 102900000, guid: 2f6c24e86bfb2014a955d23d9fe84e21,
+    type: 3}
+  "ArtFolder_Vases_\u84DD\u7EFF\u8272": {fileID: 102900000, guid: fe8d1665ea0b13949a7a8bd8c0afd21f,
+    type: 3}
+  "ArtFolder_Vases_\u68D5\u8272_\u7834\u788E": {fileID: 102900000, guid: a69e8e648887b384986c93af306409c0,
+    type: 3}
+  "ArtFolder_Vases_\u6DF1\u7EFF\u8272_\u7834\u788E": {fileID: 102900000, guid: 3f300d25142ea6147be72a8f987e9300,
+    type: 3}
+  "ArtFolder_Vases_\u7D2B\u8272_\u7834\u788E": {fileID: 102900000, guid: 39d0984608dfdac43aef41d7c5cb3d0c,
+    type: 3}
+  "ArtFolder_Vases_\u7EA2\u68D5\u8272_\u7834\u788E": {fileID: 102900000, guid: 8ce06e630aa5d3946b67db22abaf9c5c,
+    type: 3}
+  "ArtFolder_Vases_\u7EFF\u8272_\u7834\u788E": {fileID: 102900000, guid: b0f77be313b9d3740999d6eb15304f94,
+    type: 3}
+  "ArtFolder_Vases_\u84DD\u7EFF\u8272_\u7834\u788E": {fileID: 102900000, guid: 0fdfaa7432737014782c23f1e81f5c2d,
+    type: 3}

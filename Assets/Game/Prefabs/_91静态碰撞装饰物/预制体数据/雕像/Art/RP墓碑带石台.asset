@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3c2ad3e80b6db149aaa84248cc1f649, type: 3}
+  m_Name: "RP\u5893\u7891\u5E26\u77F3\u53F0"
+  m_EditorClassIdentifier: 
+  randomPool:
+  - {fileID: 21300000, guid: 3ce6950ecf43de6449f889e9b7e304ca, type: 3}
+  - {fileID: 21300000, guid: 6f897581839c28e4a9b4066abf1e9c66, type: 3}
+  - {fileID: 21300000, guid: 608f58b6105fb2d4ebc497ace0928bb6, type: 3}
+  - {fileID: 21300000, guid: 63c45958708f7ab4fa524fa9535c670e, type: 3}
+  - {fileID: 21300000, guid: 8f998aff2904b374a80f7f82288c8c36, type: 3}
+  targetFolder: {fileID: 102900000, guid: 0f50edb3b10240e44a8e239fc850098a, type: 3}

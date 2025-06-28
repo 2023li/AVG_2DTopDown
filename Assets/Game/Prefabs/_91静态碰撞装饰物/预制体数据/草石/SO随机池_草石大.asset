@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3c2ad3e80b6db149aaa84248cc1f649, type: 3}
+  m_Name: "SO\u968F\u673A\u6C60_\u8349\u77F3\u5927"
+  m_EditorClassIdentifier: 
+  randomPool:
+  - {fileID: 21300000, guid: e9f12a3c98ffa3a4aa5e12d2f67bdb23, type: 3}
+  - {fileID: 21300000, guid: a2accbd2045413a43aace53350cd96cd, type: 3}
+  - {fileID: 21300000, guid: 16d02715b31225b4880ccde037c983de, type: 3}
+  - {fileID: 21300000, guid: edaf927950c57f145a56a9f4425b8f73, type: 3}
+  - {fileID: 21300000, guid: 84b950fafa00eec4f988130502c3e348, type: 3}
+  - {fileID: 21300000, guid: 7a9aeee4d504b5243a8ac59a8ed814df, type: 3}
+  - {fileID: 21300000, guid: 8e30959f3bd0fb64dad44b166d8d6b6e, type: 3}
+  - {fileID: 21300000, guid: da1afe2aea225d84a82489fd5a01e105, type: 3}
+  - {fileID: 21300000, guid: 1d3f285f3e88f8d4c86cd2e8bc9be0aa, type: 3}
+  - {fileID: 21300000, guid: 9f941481238cd10408577b274d94fcfe, type: 3}
+  - {fileID: 21300000, guid: 1722bf7c29219df45a654a90defafbea, type: 3}
+  - {fileID: 21300000, guid: d224096888901ba4f9653864d987d6e4, type: 3}
+  - {fileID: 21300000, guid: 6effdd4679eb8b3499abf7c0e366c314, type: 3}
+  - {fileID: 21300000, guid: 97c1e199315be904eb1763609f28821b, type: 3}
+  - {fileID: 21300000, guid: 1bbdf690138f8c948af167d4b05ecb1e, type: 3}
+  - {fileID: 21300000, guid: 10744d4efabfd814d828cd6a8433b703, type: 3}
+  - {fileID: 21300000, guid: 1dd5671c57451204980b77e57bfc980d, type: 3}
+  - {fileID: 21300000, guid: 9488f3316f43c6f48b2d33a1a330e034, type: 3}
+  - {fileID: 21300000, guid: 4c31142761fc469459619c781599a561, type: 3}
+  - {fileID: 21300000, guid: 9853e0e698b29f942aa147200202c099, type: 3}
+  - {fileID: 21300000, guid: 21c3f91d876ef964c819fd3cdbbb3da7, type: 3}
+  - {fileID: 21300000, guid: 2c5b0eac9577aa1419a8bf82c2d75fb2, type: 3}
+  targetFolder: {fileID: 102900000, guid: 15909067ee006674e97eda9435ce4e53, type: 3}

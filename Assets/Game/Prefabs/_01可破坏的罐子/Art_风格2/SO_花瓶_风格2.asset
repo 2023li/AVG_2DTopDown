@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eefdf8dc7b4279c4a8c62a4fd25446ca, type: 3}
+  m_Name: "SO_\u82B1\u74F6_\u98CE\u683C2"
+  m_EditorClassIdentifier: 
+  PermittedColors: 60
+  "Vases_\u68D5\u8272":
+  - {fileID: 0}
+  "Vases_\u6DF1\u7EFF\u8272":
+  - {fileID: 0}
+  "Vases_\u7D2B\u8272":
+  - {fileID: 21300000, guid: 06c818a9339211a48be41e68394e1d7a, type: 3}
+  - {fileID: 21300000, guid: 4bc3b050cd99e9c4f96452136f24d313, type: 3}
+  "Vases_\u7EA2\u68D5\u8272":
+  - {fileID: 21300000, guid: f4f359636bccc834aa6436d83c3fb810, type: 3}
+  "Vases_\u7EFF\u8272":
+  - {fileID: 21300000, guid: 45c11b547d24e18418d2b8dde3f2f458, type: 3}
+  "Vases_\u84DD\u7EFF\u8272":
+  - {fileID: 21300000, guid: 3f68e870a6e67054da0a4fb4287b377d, type: 3}
+  - {fileID: 21300000, guid: d1214c177da82e242af7e5a471ff41ba, type: 3}
+  "Vases_\u68D5\u8272_\u7834\u788E": []
+  "Vases_\u6DF1\u7EFF\u8272_\u7834\u788E": []
+  "Vases_\u7D2B\u8272_\u7834\u788E": []
+  "Vases_\u7EA2\u68D5\u8272_\u7834\u788E": []
+  "Vases_\u7EFF\u8272_\u7834\u788E": []
+  "Vases_\u84DD\u7EFF\u8272_\u7834\u788E": []
+  "ArtFolder_Vases_\u68D5\u8272": {fileID: 0}
+  "ArtFolder_\u6DF1\u7EFF\u8272": {fileID: 0}
+  "ArtFolder_Vases_\u7D2B\u8272": {fileID: 0}
+  "ArtFolder_Vases_\u7EA2\u68D5\u8272": {fileID: 0}
+  "ArtFolder_Vases_\u7EFF\u8272": {fileID: 0}
+  "ArtFolder_Vases_\u84DD\u7EFF\u8272": {fileID: 0}
+  "ArtFolder_Vases_\u68D5\u8272_\u7834\u788E": {fileID: 0}
+  "ArtFolder_Vases_\u6DF1\u7EFF\u8272_\u7834\u788E": {fileID: 0}
+  "ArtFolder_Vases_\u7D2B\u8272_\u7834\u788E": {fileID: 102900000, guid: 39d0984608dfdac43aef41d7c5cb3d0c,
+    type: 3}
+  "ArtFolder_Vases_\u7EA2\u68D5\u8272_\u7834\u788E": {fileID: 102900000, guid: 8ce06e630aa5d3946b67db22abaf9c5c,
+    type: 3}
+  "ArtFolder_Vases_\u7EFF\u8272_\u7834\u788E": {fileID: 102900000, guid: b0f77be313b9d3740999d6eb15304f94,
+    type: 3}
+  "ArtFolder_Vases_\u84DD\u7EFF\u8272_\u7834\u788E": {fileID: 102900000, guid: 0fdfaa7432737014782c23f1e81f5c2d,
+    type: 3}
