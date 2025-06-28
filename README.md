@@ -1,6 +1,6 @@
 # AVG_2DTopDown
 ### 项目启动场景
-    Game → Scenes → _00AwakeRomm
+    Game → Scenes → AwakeRomm → _00启动场景
 ### 项目插件说明
 [Hot Reload](https://assetstore.unity.com/packages/tools/utilities/hot-reload-edit-code-without-compiling-254358)：运行时编辑代码
 
