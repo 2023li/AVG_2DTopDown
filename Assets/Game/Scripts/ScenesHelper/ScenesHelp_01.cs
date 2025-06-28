@@ -33,14 +33,14 @@ public class ScenesHelp_01 : ScenesHelpBase<ScenesHelp_01>, MMEventListener<TopD
     public override void OnMMEvent(TopDownEngineEvent e)
     {
         base.OnMMEvent(e);
-        
+
         switch (e.EventType)
         {
             case TopDownEngineEventTypes.SpawnCharacterStarts:
                 break;
             case TopDownEngineEventTypes.LevelStart:
-               
-               
+
+
 
                 break;
             case TopDownEngineEventTypes.LevelComplete:
@@ -54,9 +54,13 @@ public class ScenesHelp_01 : ScenesHelpBase<ScenesHelp_01>, MMEventListener<TopD
             case TopDownEngineEventTypes.PlayerDeath:
                 break;
             case TopDownEngineEventTypes.SpawnComplete:
-                var data = PersistenceManager.Instance.GetCharDressDic();
-                var eb = e.OriginCharacter.transform.Find("BuildCharacter").GetComponent<CharacterBuilder>();
-                CharacterBuilderHelper.DicToCharacterDress(eb, ref data);
+                Dictionary<CharacterBuilderPartEnum, string> data = PersistenceManager.Instance.GetCharDressDic();
+
+                if (data != null) 
+                {
+                    CharacterBuilder characterBuilder = e.OriginCharacter.transform.Find("BuildCharacter").GetComponent<CharacterBuilder>();
+                    CharacterBuilderHelper.DicToCharacterDress(characterBuilder, ref data); 
+                }
                e.OriginCharacter.GetComponent<InventoryCharacterIdentifier>().PlayerID = PersistenceManager.Instance.SaveOnlyID;
 
 

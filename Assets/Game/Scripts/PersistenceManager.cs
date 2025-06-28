@@ -182,7 +182,7 @@ public class PersistenceManager : MMPersistentSingleton<PersistenceManager>, MME
         public const string CharDress = "CharDress";
 
     }
-
+    
     public string PlayerName { get { return _playerName; } }
     public string SaveOnlyID { get { return _saveOnlyID; } }
     public string SaveFolderPath { get { return _saveFolderPath; } }
@@ -201,6 +201,13 @@ public class PersistenceManager : MMPersistentSingleton<PersistenceManager>, MME
     [ReadOnly][SerializeField] private string _lastScene = "_00启动场景";
     [ReadOnly][SerializeField] private int _lastPoint = 0;
     Dictionary<CharacterBuilderPartEnum, string> _dic_CharDress;
+
+
+    #region Debug
+    private bool isNeedSave = true;
+    #endregion 
+
+
     public void CreateNewGameSave(string playerName)
     {
         _saveFolderPath = GetNextAvailableSavePath();
@@ -227,7 +234,9 @@ public class PersistenceManager : MMPersistentSingleton<PersistenceManager>, MME
     [Button("测试保存")]
     public void SaveGameToFile()
     {
-       
+
+        
+
         if (!Directory.Exists(SaveFolderPath))
         {
             Directory.CreateDirectory(SaveFolderPath);
