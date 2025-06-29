@@ -194,7 +194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.101960786}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -269,7 +269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.15686275, g: 0.22745098, b: 0.2901961, a: 1}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -372,10 +372,10 @@ GameObject:
   - component: {fileID: 3707261658212883499}
   - component: {fileID: 8404962870311322730}
   - component: {fileID: 6818654011869393737}
-  - component: {fileID: 4097799015290072923}
+  - component: {fileID: -6850216496140115665}
   - component: {fileID: 1223046886759028164}
   m_Layer: 5
-  m_Name: "\u80CC\u5305\u683C\u5B50"
+  m_Name: "\u80CC\u5305\u683C\u5B50 1"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -458,7 +458,7 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.29803923}
   m_EffectDistance: {x: 0, y: -6}
   m_UseGraphicAlpha: 1
---- !u!114 &4097799015290072923
+--- !u!114 &-6850216496140115665
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -467,7 +467,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5057353416556229353}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a065b17f5c7e20442ab8d29ce30bc745, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e1736ee46bea284ba9e9c8b047b3545, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
@@ -506,12 +506,12 @@ MonoBehaviour:
   ParentInventoryDisplay: {fileID: 0}
   Index: 0
   SlotEnabled: 1
-  TargetImage: {fileID: 8404962870311322730}
-  TargetCanvasGroup: {fileID: 1223046886759028164}
-  TargetRectTransform: {fileID: 6023173329127478609}
-  IconRectTransform: {fileID: 1959796991800340821}
-  IconImage: {fileID: 7015271546993193191}
-  QuantityText: {fileID: 4673224502237536333}
+  TargetImage: {fileID: 0}
+  TargetCanvasGroup: {fileID: 0}
+  TargetRectTransform: {fileID: 0}
+  IconRectTransform: {fileID: 0}
+  IconImage: {fileID: 0}
+  QuantityText: {fileID: 0}
 --- !u!225 &1223046886759028164
 CanvasGroup:
   m_ObjectHideFlags: 0

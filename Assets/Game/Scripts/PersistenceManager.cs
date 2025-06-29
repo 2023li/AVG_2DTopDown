@@ -204,7 +204,8 @@ public class PersistenceManager : MMPersistentSingleton<PersistenceManager>, MME
 
 
     #region Debug
-    private bool isNeedSave = true;
+    [FoldoutGroup("Debug")]
+    [SerializeField] private bool isSaveToFile = true;
     #endregion 
 
 
@@ -234,7 +235,10 @@ public class PersistenceManager : MMPersistentSingleton<PersistenceManager>, MME
     [Button("测试保存")]
     public void SaveGameToFile()
     {
-
+        if (!isSaveToFile)
+        {
+            return;
+        }
         
 
         if (!Directory.Exists(SaveFolderPath))
@@ -325,7 +329,7 @@ public class PersistenceManager : MMPersistentSingleton<PersistenceManager>, MME
 
 
 
-   
+
     public Dictionary<CharacterBuilderPartEnum, string> GetCharDressDic()
     {
         return _dic_CharDress;
