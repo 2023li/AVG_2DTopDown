@@ -14,6 +14,7 @@ namespace MoreMountains.Feedbacks
 	[FeedbackHelp("This feedback lets you flicker the color of a specified renderer (sprite, mesh, etc) for a certain duration, at the specified octave, and with the specified color. Useful when a character gets hit, for example (but so much more!).")]
 	[MovedFrom(false, null, "MoreMountains.Feedbacks")]
 	[FeedbackPath("Renderer/Flicker")]
+	//闪光反馈
 	public class MMF_Flicker : MMF_Feedback
 	{
 		/// a static bool used to disable all feedbacks of this type at once
@@ -162,6 +163,8 @@ namespace MoreMountains.Feedbacks
 
 		protected virtual void AcquireRenderers(MMF_Player owner)
 		{
+			Debug.Log("Owner  :" + (owner == null));
+
 			if (Active && (BoundRenderer == null) && (owner != null))
 			{
 				if (Owner.gameObject.MMFGetComponentNoAlloc<Renderer>() != null)
@@ -196,8 +199,25 @@ namespace MoreMountains.Feedbacks
 			{
 				return;
 			}
-			_spriteRendererTexture = _spriteRenderer.sprite.texture;
-			_spriteRendererTextures = new List<Texture2D>();
+			if (_spriteRenderer == null)
+			{
+				Debug.LogWarning("_spriteRenderer Null");
+				return ;
+			}
+			if (_spriteRenderer.sprite == null)
+			{
+                Debug.LogWarning("_spriteRenderer.sprite Null");
+                return;
+			}
+			if (_spriteRenderer.sprite.texture==null) 
+			{
+                Debug.LogWarning("_spriteRenderer.sprite.texture Null");
+                return;
+			}
+           
+            _spriteRendererTexture = _spriteRenderer.sprite.texture;
+		
+            _spriteRendererTextures = new List<Texture2D>();
 			for (var index = 0; index < ExtraBoundRenderers.Count; index++)
 			{
 				_spriteRendererTextures.Add(_spriteRenderers[index].sprite.texture);
