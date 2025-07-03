@@ -12,7 +12,7 @@ public class GO_Vase : MonoBehaviour,ISceneAddedListener
     [SerializeField]
     private SO_Vase vaseData;
 
-
+   
 
     [MMReadOnly]
     [SerializeField]
@@ -46,6 +46,8 @@ public class GO_Vase : MonoBehaviour,ISceneAddedListener
         {
             RandomVase();
             isFirstAddToScenes=false;
+
+
         }
     }
     

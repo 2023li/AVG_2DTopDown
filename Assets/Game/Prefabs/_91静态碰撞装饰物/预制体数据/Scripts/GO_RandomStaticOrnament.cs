@@ -12,7 +12,7 @@ namespace LO
     {
 
         [SerializeField]
-        [MMLabel("是否第一次添加到常见")]
+        [MMLabel("是否第一次添加到场景")]
        
         private bool isFristAddToScenes = true;
 
