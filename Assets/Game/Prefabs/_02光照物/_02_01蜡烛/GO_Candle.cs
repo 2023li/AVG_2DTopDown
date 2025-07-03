@@ -7,7 +7,7 @@ using MoreMountains.Tools;
 public class GO_Candle : MonoBehaviour, ISceneAddedListener
 {
     [SerializeField]
-    [MMLabel("是否第一次添加到常见")]
+    [MMLabel("是否第一次添加到场景")]
 
     private bool isFristAddToScenes = true;
     [SerializeField]
@@ -127,14 +127,15 @@ public class GO_Candle : MonoBehaviour, ISceneAddedListener
     public AnimationCurve SmokeScalingCurve;
 
     // 组件引用
-    private GameObject 蜡烛火光;
-    private SpriteRenderer sr_fire;
-    private GameObject 熄灭烟雾;
-    private SpriteRenderer sr_smoke;
-    private GameObject 蜡烛_点燃时;
-    private SpriteRenderer sr_candle_fire;
-    private GameObject 蜡烛_熄灭时;
-    private SpriteRenderer sr_candle_noFire;
+    [SerializeField] private GameObject 蜡烛火光;
+    [SerializeField] private SpriteRenderer sr_fire;
+    [SerializeField] private GameObject 熄灭烟雾;
+    [SerializeField] private SpriteRenderer sr_smoke;
+    [SerializeField] private GameObject 蜡烛_点燃时;
+    [SerializeField] private SpriteRenderer sr_candle_fire;
+    [SerializeField] private GameObject 蜡烛_熄灭时;
+    [SerializeField] private SpriteRenderer sr_candle_noFire;
+    [SerializeField] private bool autoReference = true;
 
     [SerializeField]
     [MMReadOnly]
@@ -150,14 +151,17 @@ public class GO_Candle : MonoBehaviour, ISceneAddedListener
 
     private void Awake()
     {
-        蜡烛火光 = transform.GetChild(0).gameObject;
-        熄灭烟雾 = transform.GetChild(1).gameObject;
-        蜡烛_点燃时 = transform.GetChild(2).gameObject;
-        蜡烛_熄灭时 = transform.GetChild(3).gameObject;
-        sr_candle_fire = 蜡烛_点燃时.GetComponent<SpriteRenderer>();
-        sr_candle_noFire = 蜡烛_熄灭时.GetComponent<SpriteRenderer>();
-        sr_smoke = 熄灭烟雾.GetComponent<SpriteRenderer>();
-        sr_fire = 蜡烛火光.GetComponent<SpriteRenderer>();
+        if (autoReference)
+        {
+            蜡烛火光 = transform.GetChild(0).gameObject;
+            熄灭烟雾 = transform.GetChild(1).gameObject;
+            蜡烛_点燃时 = transform.GetChild(2).gameObject;
+            蜡烛_熄灭时 = transform.GetChild(3).gameObject;
+            sr_candle_fire = 蜡烛_点燃时.GetComponent<SpriteRenderer>();
+            sr_candle_noFire = 蜡烛_熄灭时.GetComponent<SpriteRenderer>();
+            sr_smoke = 熄灭烟雾.GetComponent<SpriteRenderer>();
+            sr_fire = 蜡烛火光.GetComponent<SpriteRenderer>();
+        }
 
         InitializeState();
     }

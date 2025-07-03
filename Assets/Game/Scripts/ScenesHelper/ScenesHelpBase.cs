@@ -2,6 +2,7 @@
 using MoreMountains.InventoryEngine;
 using MoreMountains.Tools;
 using MoreMountains.TopDownEngine;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,6 +10,14 @@ using UnityEngine.SceneManagement;
 
 public abstract class ScenesHelpBase<T> :ffSingletonMonoBehaviour<T>, MMEventListener<TopDownEngineEvent>, MMEventListener<CheckPointEvent>, MMEventListener<LOGameEvent>where T: ScenesHelpBase<T>
 {
+
+    [Button("自动引用仓库组件")]
+    public void AutoReferenceInventories()
+    {
+        allInventoryDisplays = GameObject.FindObjectsOfType<InventoryDisplay>();
+        allInventorys = GameObject.FindObjectsOfType<Inventory>();
+    }
+
     protected Transform Inventories;
 
 

@@ -6,7 +6,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "\u540C\u7528\u706B\u5149"
+  m_Name: "\u901A\u7528\u706B\u5149"
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:

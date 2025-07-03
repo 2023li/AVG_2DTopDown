@@ -6,6 +6,8 @@ using MoreMountains.Feedbacks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using MoreMountains.Tools;
+using Sirenix.OdinInspector;
+using MoreMountains.InventoryEngine;
 
 
 namespace MoreMountains.TopDownEngine
@@ -46,10 +48,37 @@ namespace MoreMountains.TopDownEngine
         public CheckPoint CurrentCheckpoint;
 
         [Header("关卡入口点")]
+
+		
+
         /// A list of this level's points of entry, which can be used from other levels as initial targets
         [MMLabel("入口列表")]
         [Tooltip("本关卡入口点列表（可从其他关卡指定进入位置）")]
         public Transform[] PointsOfEntry;
+        [Button("获取所有入口")]
+        private void AddAllEnterPoint()
+        {
+           var CheckPoints = GameObject.FindObjectsOfType<CheckPoint>();
+
+            PointsOfEntry = new Transform[CheckPoints.Length];
+
+            foreach (var CheckPoint in CheckPoints) 
+			{
+
+				int order = CheckPoint.CheckPointOrder;
+
+
+				if (PointsOfEntry[order]!=null)
+				{
+					Debug.LogWarning("CheckPoint Order存在重复,重复值" + order);
+				}
+
+				PointsOfEntry[order] = CheckPoint.transform;
+
+            }
+
+		}
+
 
         [Space(10)]
         [Header("开场/结束动画时长")]
