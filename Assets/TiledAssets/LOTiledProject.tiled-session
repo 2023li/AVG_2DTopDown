@@ -1,5 +1,5 @@
 {
-    "activeFile": "D:/UnityProject/LuminaOdyssey/Assets/RafaelMatos/ERW-Grassland 2.0 V1.7.2/TiledMap Editor/main.tmx",
+    "activeFile": "D:/UnityProject/WorldSt/Assets/PixelPack03_Free/Level01.tmx",
     "expandedProjectPaths": [
     ],
     "file.lastUsedOpenFilter": "全部文件 (*)",
@@ -224,9 +224,23 @@
             "scale": 1,
             "selectedLayer": 6,
             "viewCenter": {
-                "x": -2331,
-                "y": -1381.5
+                "x": 1.5,
+                "y": 485
             }
+        },
+        "D:/UnityProject/WorldSt/Assets/PixelPack03_Free/Level01.tmx": {
+            "scale": 0.232490234375,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 2559.2472802117027,
+                "y": 514.0000840089051
+            }
+        },
+        "D:/UnityProject/WorldSt/Assets/PixelPack03_Free/Level01.tmx#BKG01": {
+            "scaleInDock": 1
+        },
+        "D:/UnityProject/WorldSt/Assets/PixelPack03_Free/Level01.tmx#Tileset": {
+            "scaleInDock": 1
         },
         "房子tmx/官方预制房1-3.tsx": {
             "scaleInDock": 0.75,
@@ -240,11 +254,13 @@
     "last.externalTilesetPath": "D:/UnityProject/LuminaOdyssey/Assets/RafaelMatos/ERW-Grass Land V1.5.1/TiledMap Editor/tilesets",
     "last.imagePath": "D:/UnityProject/LuminaOdyssey/Assets/RafaelMatos/ERW-Grass Land V1.5.1/Props",
     "openFiles": [
-        "D:/UnityProject/LuminaOdyssey/Assets/RafaelMatos/ERW-Grassland 2.0 V1.7.2/TiledMap Editor/main.tmx"
+        "D:/UnityProject/LuminaOdyssey/Assets/RafaelMatos/ERW-Grassland 2.0 V1.7.2/TiledMap Editor/main.tmx",
+        "D:/UnityProject/WorldSt/Assets/PixelPack03_Free/Level01.tmx"
     ],
     "project": "LOTiledProject.tiled-project",
     "recentFiles": [
         "D:/UnityProject/LuminaOdyssey/Assets/RafaelMatos/ERW-Grassland 2.0 V1.7.2/TiledMap Editor/main.tmx",
+        "D:/UnityProject/WorldSt/Assets/PixelPack03_Free/Level01.tmx",
         "D:/UnityProject/LuminaOdyssey/Assets/Game/TiledMap/Sample Map.tmx",
         "D:/UnityProject/LuminaOdyssey/Assets/RafaelMatos/ERW-Grassland 2.0 V1.7.2/TiledMap Editor/TiledMap Editor Example - grass land 2.0.tmx",
         "D:/UnityProject/LuminaOdyssey/Assets/RafaelMatos/ERW-Grassland 2.0 V1.7.2/TiledMap Editor/Tilesets/Atlas-Props-sheet1.tsx",

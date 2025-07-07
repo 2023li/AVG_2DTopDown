@@ -13,3 +13,5 @@
 [Pixel Art Full GUI（要补票）](https://assetstore.unity.com/packages/2d/gui/pixel-art-full-gui-ui-kit-151-icons-205222)：UI美术资源
 
 [Epic RPG World Collection](https://assetstore.unity.com/packages/2d/environments/epic-rpg-world-collection-272289)：环境美术资源
+
+[Dialogue System for Unity 2.2.55（需要补票）](https://www.pixelcrushers.com/dialogue_system/manual2x/html/quests.html):对话任务系统插件
